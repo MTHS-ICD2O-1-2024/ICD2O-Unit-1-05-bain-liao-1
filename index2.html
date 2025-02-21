@@ -32,31 +32,41 @@
         <div class="page-content" style="padding-left: 100px">
           Enter the length of a square.
         </div>
-        <!-- Simple Textfield for integers-->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="[0-9]*"
-              id="demo-input"
-            />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input"
-              >Length of square (mm)</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number</span>
-          </div>
-          <br />
-          <!-- Raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          >
-            Calculate area
-          </button>
-        </form>
+        <!-- Icon List -->
+        <style>
+          .demo-list-icon {
+            width: 300px;
+          }
+        </style>
+        <ul class="demo-list-icon mdl-list">
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">person</i>
+              Robert Freeman
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">person</i>
+              Bill Bain
+            </span>
+          </li>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">person</i>
+              Steward Griffith
+            </span>
+          </li>
+        </ul>
+        <!-- Default Slider -->
+        <input
+          class="mdl-slider mdl-js-slider"
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          tabindex="0"
+        />
         <p>
           <a href="./index.html">return</a>
         </p>
